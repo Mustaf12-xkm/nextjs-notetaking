@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FiMoreHorizontal } from "react-icons/fi";
+
 
 interface NoteCardProps {
   title: string;
@@ -28,7 +28,7 @@ const Notecard: React.FC<NoteCardProps> = ({ title, description,id ,date }) => {
     hour12: true,
   }).format(dateTime);
 
-  
+
   return (
     <Link  href={`/detailpage/${id}`} className="bg-white rounded-lg shadow-md mt-4 p-4">
       <div className="mr-4 mb-2  ">
