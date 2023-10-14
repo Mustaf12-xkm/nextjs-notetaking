@@ -27,7 +27,8 @@ const Notecard: React.FC<NoteCardProps> = ({ title, description,id ,date }) => {
     minute: 'numeric',
     hour12: true,
   }).format(dateTime);
- 
+
+  
   return (
     <Link  href={`/detailpage/${id}`} className="bg-white rounded-lg shadow-md mt-4 p-4">
       <div className="mr-4 mb-2  ">

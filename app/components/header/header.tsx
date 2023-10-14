@@ -1,9 +1,9 @@
 "use client"
 
 import React from 'react'
-import { AiOutlineSearch } from "react-icons/ai";
+
 import { handelModal } from '../features/modalslice';
-import {useSelector ,useDispatch} from "react-redux"
+import {useDispatch} from "react-redux"
 function header() {
   const dispatch = useDispatch()
   const handleClickOpen = () => {
